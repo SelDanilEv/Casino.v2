@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <Id>0</Id>
+    <Name>Admin</Name>
+    <Password>NIMDA</Password>
+    <Rate>0</Rate>
+    <Cash>100</Cash>
+    <CorrectTransition>false</CorrectTransition>
+    <TypeOfRate>noth</TypeOfRate>
+  </User>
+  <User>
+    <Id>1</Id>
+    <Name>1</Name>
+    <Password>1</Password>
+    <Rate>0</Rate>
+    <Cash>1000</Cash>
+    <CorrectTransition>false</CorrectTransition>
+    <TypeOfRate>noth</TypeOfRate>
+  </User>
+</ArrayOfUser>

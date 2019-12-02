@@ -1,0 +1,17 @@
+﻿@page "{handler?}"
+@model Casino.v2.Pages.AccountModel
+
+@if (@Model.CurrentUser.CorrectTransition && @Model.Checked)
+{
+    <h2>Welcome</h2>
+    <h2>ID @Model.CurrentUser.Id</h2>
+    <h2>Name @Model.CurrentUser.Name</h2>
+    <h2>Cash @Model.CurrentUser.Cash</h2>
+    <a asp-page="Index" asp-page-handler="Logout">Logout</a>
+}
+else
+{
+    <div style="width:50%;height:30%;text-align:center;font-size:400%;color:red;margin-top:35%;margin:25%;padding-bottom:30%">
+        <a asp-page="Index" asp-page-handler="Logout">Error<br>Go back</a>
+    </div>
+}

@@ -1,0 +1,32 @@
+﻿@page "{handler?}"
+
+@model Casino.v2.Models.UserInfo
+
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+
+
+    <div style="margin-left:40%;margin-top:10%">
+        <form method="post">
+            <label style="color:blueviolet;font-size:large">Login Form</label>
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Username" asp-for="@Model.Username" /></td>
+                    <td>
+                        @if (Model.Message != null)
+                        {
+                            @Model.Message
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Password" asp-for="@Model.Password" /></td>
+                </tr>
+
+                <tr>
+                    <td><input style="margin-left:10px" type="submit" asp-page-handler="LogIn" value="Log in" />
+                    <input style="margin-left:28px" type="submit" asp-page-handler="LogOn" value="Log on" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
